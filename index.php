@@ -290,9 +290,9 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 		</div>
            
         <div class="social-icons col-3 col-m-12">
-			<li><a href="https://www.facebook.com/profile.php?id=100011194487094" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-			<li><a href="https://twitter.com/THEOTOKOSRocks" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/nicholas-n-welch-00486213" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://bit.ly/nwelch-facebook" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://bit.ly/nwelch-twitter" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://bit.ly/nwelch-linkedin" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
 		
 		<div class="copyright">
 			Copyright 2016 Welch Title and Abstract
