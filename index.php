@@ -48,6 +48,14 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <meta name="viewport" content="width=device-width">
 <title>Welch | Title and Abstract</title>
 
+	<meta name="description" content="We provide searches, examinations, and closings to help manage big workloads, drive repeat business, and resolve complex title issues.">
+	<meta name="keywords" content="Title, Commercial Title, closings, Indianapolis">
+	<meta name="author" content="Nick Welch">
+	<meta property="og:image" content="http://welch-title.com/images/welch-title_welch-title-square-white.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
