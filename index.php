@@ -48,10 +48,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <meta name="viewport" content="width=device-width">
 <title>Welch | Title and Abstract</title>
 
-	<meta name="description" content="We provide searches, examinations, and closings to help manage big workloads, drive repeat business, and resolve complex title issues.">
+	<meta name="description" content="We provide searches, examinations, and closings to help manage large workloads, drive repeat business, and resolve complex title issues.">
 	<meta name="keywords" content="Title, Commercial Title, closings, Indianapolis">
 	<meta name="author" content="Nick Welch">
-	<meta property="og:image" content="http://welch-title.com/images/welch-title_welch-title-square-white.png">
+	<meta property="og:image" content="http://welch-title.com/images/logos/welch-title_welch-title-square-white.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1024">
 	<meta property="og:image:height" content="1024">
@@ -60,16 +60,23 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	<link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
 
-	  ga('create', 'UA-88258809-1', 'auto');
-	  ga('send', 'pageview');
-
-</script>
+	<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Local Business",
+			  "name": "Welch Title and Abstract",
+			  "url": "http://welch-title.com",
+			  "email": "nick@welch-title.com"
+			  "founders": "Nick Welch Sr."
+			  "foundingDate": "2002-05-20",
+			  "logo": "http://welch-title.com/library/images/welch-title_welch-title-square-white.jpg",
+			  "sameAs": [
+			    "https://www.instagram.com/SkymouseStudios/"
+			  ]
+			}
+		</script>
 	
 </head>
 
@@ -307,18 +314,28 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 </footer>
 
 <script src="js/jquery.min.js"></script> 
-<script src="js/retina.min.js"></script> 
+<!-- <script src="js/retina.min.js"></script> --> 
 <!-- include Masonry -->
-<script src="js/isotope.pkgd.min.js"></script> 
+<!-- <script src="js/isotope.pkgd.min.js"></script>  -->
 <!-- include image popups -->
-<script src="js/jquery.magnific-popup.min.js"></script> 
+<!-- <script src="js/jquery.magnific-popup.min.js"></script>  -->
 <!-- include mousewheel plugins -->
-<script src="js/jquery.mousewheel.min.js"></script>
+<!-- <script src="js/jquery.mousewheel.min.js"></script> -->
 <!-- include carousel plugins -->
-<script src="js/jquery.tinycarousel.min.js"></script>
+<!-- <script src="js/jquery.tinycarousel.min.js"></script> -->
 <!-- include svg line drawing plugin -->
 <script src="js/jquery.lazylinepainter.min.js"></script>
 
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-88258809-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 
 <!-- include custom script -->
 <script src="js/scripts.js"></script>
