@@ -1,3 +1,25 @@
 # config.yml
 
 # subtitle => page.subtitle?
+
+links:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services
+  - title: About
+    url: /about
+  - title: Contact
+    url: /#contact
+
+services:
+  - title: Coal Oil Gas
+    url: /coal-oil-gas
+  - title:
+    url:
+  - title:
+    url:
+  - title:
+    url:
+  - title:
+    url:

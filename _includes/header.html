@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Welch | Title and Abstract</title>
+<title>Welch Title | {{ page.title }}</title>
 
 	<meta name="description" content="We provide searches, examinations, and closings to help manage large workloads, drive repeat business, and resolve complex title issues.">
 	<meta name="keywords" content="Title, Commercial Title, closings, Indianapolis">
 	<meta name="author" content="Nick Welch">
-	<meta property="og:image" content="http://welch-title.com/images/logos/welch-title_welch-title-square-white.png">
+	<meta property="og:image" content="{{site.url}}/images/logos/welch-title_welch-title-square-white.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1024">
 	<meta property="og:image:height" content="1024">
 
-	<link rel="stylesheet" type="text/css" href="library/style.css">
+	<link rel="stylesheet" type="text/css" href="{{site.url}}/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
+	<link rel="stylesheet" href="{{site.url}}/library/css/icomoon.css" media="screen" />
 	
 
 	<script type="application/ld+json">
@@ -39,33 +39,37 @@
 
 <body>
 
-<header id="home" class="row">
+<header id="home" class="row" style="background-image: url(' {{ page.img }} ');">
 
 	<nav id="mainmenu" role="navigation">
-			<a href="index.php">
-			<div class="logo col-3">
-		</div>
+		<a href="{{ site.url }}">
+			<div class="logo col-3"></div>
 		</a>
+
 		<div id="menu-burger"><i class="icon-menu"></i></div>
+
 		<div id="searchicon">		
 		</div>
 		<div id="menu">
 			<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="services.php">Services</a></li>
-			<li><a href="about.php">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
+	          {% for link in site.links %}
+	            <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
+	          {% endfor %}
+	 		</ul>
 		</div>
 	</nav>
 
-	<div class="callout row row-centered">
-		<h1>Professional Title. <br>Only When You Need It.</h1>
-		<div class="header-buttons">
-			<a class="button-quote" href="#contact">Get a Quote
-		</a>
-	</div>
+	<div class="callout row row-centered clearfix">
 
+		<img class="row-centered" src="{{site.url}}/library/images/logos/welch-title-horizontal-white.svg" alt="Welch Title">
+
+
+		<h1>{{ page.title }}</h1>
+		<div class="header-buttons">
+			<a class="button-quote" href="#contact">Get a Quote</a>
+		</div>
+		
+	</div>
 	<div class="bottom-arrow"></div>
 
 

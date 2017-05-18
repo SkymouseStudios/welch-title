@@ -3,56 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Welch | Title and Abstract</title>
+<title>Welch Title | About</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="We provide searches, examinations, and closings to help manage large workloads, drive repeat business, and resolve complex title issues.">
+	<meta name="keywords" content="Title, Commercial Title, closings, Indianapolis">
+	<meta name="author" content="Nick Welch">
+	<meta property="og:image" content="http://localhost:4000/images/logos/welch-title_welch-title-square-white.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+
+	<link rel="stylesheet" type="text/css" href="http://localhost:4000/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<link rel="stylesheet" href="http://localhost:4000/library/css/icomoon.css" media="screen" />
+	
 
-	  ga('create', 'UA-88258809-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+	<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Local Business",
+			  "name": "Welch Title and Abstract",
+			  "url": "http://welch-title.com",
+			  "email": "nick@welch-title.com"
+			  "founders": "Nick Welch Sr."
+			  "foundingDate": "2002-05-20",
+			  "logo": "http://welch-title.com/library/images/welch-title_welch-title-square-white.jpg",
+			  "sameAs": [
+			    "https://www.instagram.com/SkymouseStudios/"
+			  ]
+			}
+		</script>
 	
 </head>
 
 <body>
 
-<header id="about" class="row">
+<header id="home" class="row" style="background-image: url(' library/images/bg/library.jpg ');">
 
 	<nav id="mainmenu" role="navigation">
-			<a href="index.php">
-			<div class="logo col-3">
-		</div>
+		<a href="http://localhost:4000">
+			<div class="logo col-3"></div>
 		</a>
+
 		<div id="menu-burger"><i class="icon-menu"></i></div>
+
 		<div id="searchicon">		
 		</div>
 		<div id="menu">
 			<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="services.php">Services</a></li>
-			<li><a href="about.php">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
+	          
+	            <li><a href="http://localhost:4000/">Home</a></li>
+	          
+	            <li><a href="http://localhost:4000/services">Services</a></li>
+	          
+	            <li><a href="http://localhost:4000/about">About</a></li>
+	          
+	            <li><a href="http://localhost:4000/#contact">Contact</a></li>
+	          
+	 		</ul>
 		</div>
 	</nav>
 
+	<div class="callout row row-centered clearfix">
+
+		<img class="row-centered" src="http://localhost:4000/library/images/logos/welch-title-horizontal-white.svg" alt="Welch Title">
 
 
-	<div class="callout row row-centered">
 		<h1>About</h1>
 		<div class="header-buttons">
-			<a class="button-quote" href="#contact">Get a Quote
-		</a>
+			<a class="button-quote" href="#contact">Get a Quote</a>
+		</div>
+		
 	</div>
-
 	<div class="bottom-arrow"></div>
 
 
@@ -86,63 +109,11 @@
 		
 	</div>
 
-
-
-
-	<div class="section-4 row row-centered"><!-- BEGIN SECTION 4 -->
-		<div class="box col-4 col-m-6">
-            <h2>Here is How to Take Action!</h2>
-            <p>Whether you’re looking for a quote, a professional opinion, or just wanting to share your thoughts, feel free to get in touch! We do our absolute best to reply as soon as we can.</p>
-        </div>
-
-		<div class="box col-4 col-m-6">
-			
-			<form class="form-horizontal" role="form" method="post" action="#contact">
-
-			<?php echo "<p class='text-danger'>$errName</p>";?>
-			<div class="form-group">
-				<label for="name" class="control-label">Name</label>
-					<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-			</div>
-
-			<?php echo "<p class='text-danger'>$errEmail</p>";?>
-			<div class="form-group">
-				<label for="email" class="contol-label">Email</label>
-					<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-
-			</div>
-
-			<?php echo "<p class='text-danger'>$errMessage</p>";?>
-			<div class="form-group">
-				<label for="message" class="control-label">How Can We Help?</label>
-					<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-			</div>
-
-			<?php echo "<p class='text-danger'>$errHuman</p>";?>
-			<div class="form-group">
-					<label for="human" class="control-label">2 + 3 = ?</label>
-					<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-			</div>
-
-			<div class="form-group">
-					<input id="submit" name="submit" type="submit" value="Get in Touch!" class="btn btn-primary">
-			</div>
-
-			<div class="form-group">
-					<?php echo $result; ?>	
-			</div>
-			
-			</form> 
-
-		</div>
-		
-	</div><!-- END SECTION 4 -->
-
 </content>
 
 <footer>
 	<div id="contact" class="box row">
-		 <img src="images/welch-title_welch-title-square-white.png" />
+		 <img src="library/images/logos/welch-title-square-white.svg" />
 		<div class="contact">
             <div class="contact-info">
                 Nick Welch
@@ -161,34 +132,25 @@
 			<li><a href="https://bit.ly/nwelch-twitter" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
 			<li><a href="https://bit.ly/nwelch-linkedin" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
 		
-		<div class="copyright">
-			Copyright 2016 Welch Title and Abstract
-		</div>
+			<div class="copyright">
+				Copyright 2016 Welch Title and Abstract
+			</div>
 
 		</div>
-
-		
 	</div>
-
-
 </footer>
 
-<script src="js/jquery.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<!-- include Masonry -->
-<script src="js/isotope.pkgd.min.js"></script> 
-<!-- include image popups -->
-<script src="js/jquery.magnific-popup.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="js/jquery.lazylinepainter.min.js"></script>
+<script src="http://localhost:4000/library/js/scripts.js"></script>
 
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<!-- include custom script -->
-<script src="js/scripts.js"></script>
+	  ga('create', 'UA-88258809-1', 'auto');
+	  ga('send', 'pageview');
+</script>
 
 </body>
 </html>

@@ -1,0 +1,81 @@
+nav {
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    background-color: #1c669b;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 5px solid white;
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 200;
+    }
+
+    #menu-burger {
+        display: none;
+        float: right;
+        position: relative;
+        line-height: 36px;
+        padding: 0 0 0 1.5em;
+        margin: 30px;
+        z-index: 202;
+        color: white;
+        font-size: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:hover {
+            color: #222;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    float: right;
+    padding: 0px 80px;
+    margin: 0 0 0 -10px;
+    height: 80px;
+}
+
+li {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 10px;
+    color: white;
+    height: auto;
+    text-align: center;
+}
+
+nav ul li a::after,
+nav ul li.current-menu-item > a::after,
+nav ul li.current-menu-parent > a::after,
+nav ul li.current_page_parent > a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    max-width: 100px;
+    margin: 0 auto;
+    z-index: -1;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+nav ul li a::after {
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+nav ul li a:hover::after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
