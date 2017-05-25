@@ -317,22 +317,57 @@ body {
 }
 
 .section-4 .box {
-    text-align: center;
+    text-align: left;
     display: inline-block;
     margin: 40px;
     vertical-align: top;
 }
 
-.section-4 h2 {
-    box-shadow: black 2px;
-    margin: 0 0 60px 0;
+/* ---------------------------------------- */ 
+/* --------------- Service-Page ----------------- */
+/* ---------------------------------------- */ 
+
+.service-page {
+    overflow: hidden;
+    color: white;
+    padding: 30px 0;
+    margin-top: 80px;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    ul {
+        padding: 0;
+        float: none;
+    }
+
+    li {
+        display: block;
+        color: black;
+        text-align: left;
+        padding: 2px;
+        padding-left: 15px;
+        font-size: 1em;
+        line-height: 1.8em;
+        color: #404040;
+        font-weight: 200;
+
+        ::before {
+            content: ">";
+        }
+    }
 }
 
-.section-4 p {
-    color: white;
-}
 /* ---------------------------------------- */ 
-/* --------------- SECTION-4 ----------------- */
+/* --------------- Footer ----------------- */
 /* ---------------------------------------- */ 
 
 footer {
