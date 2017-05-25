@@ -65,36 +65,65 @@
 		</div>
 	</nav>
 
-	<div class="callout row row-centered clearfix">
-
-		<img class="row-centered" src="http://localhost:4000/library/images/logos/welch-title-horizontal-white.svg" alt="Welch Title">
-
-
-		<h1>Wireless Telecom</h1>
-		<div class="header-buttons">
-			<a class="button-quote" href="#contact">Get a Quote</a>
-		</div>
-		
-	</div>
-	<div class="bottom-arrow"></div>
-
-
 </header>
 
-<p>We were acquiring and zoning cell site when bag phones were the hottest technology!  27 years and 13 states later we have performed everything from site selection to tower management and all points in between.</p>
+<div class="service-page row row-centered">
+		<h1>Wireless Telecom</h1>
+		<div class="box col-4 col-m-6">
+			<p>We were acquiring and zoning cell site when bag phones were the hottest technology!  27 years and 13 states later we have performed everything from site selection to tower management and all points in between.</p>
 
-<h2 id="services">Services</h2>
+<h2 class="gray">Services</h2>
+<ul>
+  <li>Site Acquisition</li>
+  <li>Zoning</li>
+  <li>Permitting</li>
+  <li>Construction Management</li>
+  <li>Due Diligence</li>
+  <li>Project Management</li>
+  <li>Tower Management</li>
+  <li>Tower Brokerage</li>
+  <li>Title Research</li>
+</ul>
 
-<p>Site Acquisition 
-Zoning 
-Permitting 
-Construction Management 
-Due Diligence 
-Project Management 
-Tower Management 
-Tower Brokerage</p>
+        </div>
+
+		<div class="box col-5 col-m-6">
 
 
+
+	
+			
+
+			<form class="form-horizontal" role="form" method="post" action="library/contact.php">
+			<h2>Start a Project</h2>
+			<div class="form-group">
+				<label for="name" class="control-label">Full Name</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+			</div>
+			<div class="form-group">
+				<label for="email" class="contol-label">Email Address</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+
+			</div>
+			<div class="form-group">
+				<label for="message" class="control-label">How Can We Help?</label>
+					<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+			</div>
+
+			<div class="form-group">
+					<label for="human" class="control-label">2 + 3 = ? (Helps prevent spam)</label>
+					<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+			</div>
+
+			<div class="form-group">
+					<input id="submit" name="submit" type="submit" value="Order Now!" class="btn btn-primary">
+			</div>
+
+			</form> 
+		
+
+	</div>
+</div>
 <footer>
 	<div id="contact" class="box row">
 		 <img src="library/images/logos/welch-title-square-white.svg" />
@@ -105,7 +134,7 @@ Tower Brokerage</p>
             <div class="contact-info clearfix">
                (317) 496-0923
             </div>
-             <a class="contact-info" href="mailto:nick@welch-title.com">
+             <a class="contact-info underline" href="mailto:nick@welch-title.com">
                nick@welch-title.com
             </a>
 
@@ -117,7 +146,7 @@ Tower Brokerage</p>
 			<li><a href="https://bit.ly/nwelch-linkedin" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
 		
 			<div class="copyright">
-				Copyright 2016 Welch Title and Abstract
+				&copy;2017 Welch Abstract and Title
 			</div>
 
 		</div>

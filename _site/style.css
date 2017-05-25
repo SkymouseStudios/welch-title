@@ -236,6 +236,9 @@ nav ul li a:hover::after {
     background-color: #0f75bc;
     transition: .5s; }
 
+.underline {
+  border-bottom: 1px solid white; }
+
 h1 {
   align-content: center;
   font-size: 3.5em;
@@ -257,6 +260,9 @@ p {
   line-height: 2em;
   color: #404040;
   font-weight: 200; }
+
+.gray {
+  color: #404040; }
 
 /* ---------------------------------------- */
 /* --------------- LAYOUT ----------------- */
@@ -326,7 +332,8 @@ p {
     text-align: center;
     padding: 20px;
     vertical-align: top;
-    margin: 10px 10px; }
+    margin: 10px 10px;
+    display: inline-block; }
   .section-1 h3 {
     display: block;
     margin: 0px auto 10px auto;
@@ -335,12 +342,12 @@ p {
     padding: 20px 0;
     border-bottom: 5px solid #1c669b; }
   .section-1 .profile {
-    background-image: url(library/images/nick-profile.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: inline-block;
-    height: 800px; }
+    width: 300px;
+    border-radius: 5px;
+    border: 3px solid white;
+    margin: 0; }
+  .section-1 h1 {
+    margin-top: 0; }
 
 /* ---------------------------------------- */
 /* --------------- SECTION-2 ----------------- */
@@ -428,20 +435,44 @@ p {
   padding: 30px 0; }
 
 .section-4 .box {
-  text-align: center;
+  text-align: left;
   display: inline-block;
   margin: 40px;
   vertical-align: top; }
 
-.section-4 h2 {
-  box-shadow: black 2px;
-  margin: 0 0 60px 0; }
-
-.section-4 p {
-  color: white; }
+/* ---------------------------------------- */
+/* --------------- Service-Page ----------------- */
+/* ---------------------------------------- */
+.service-page {
+  overflow: hidden;
+  color: white;
+  padding: 30px 0;
+  margin-top: 80px; }
+  .service-page h2 {
+    margin: 0;
+    padding: 0; }
+  .service-page .box {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top; }
+  .service-page ul {
+    padding: 0;
+    float: none; }
+  .service-page li {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 2px;
+    padding-left: 15px;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: #404040;
+    font-weight: 200; }
+    .service-page li ::before {
+      content: ">"; }
 
 /* ---------------------------------------- */
-/* --------------- SECTION-4 ----------------- */
+/* --------------- Footer ----------------- */
 /* ---------------------------------------- */
 footer {
   background-position: top;
@@ -494,7 +525,7 @@ footer img {
   width: 120px; }
 
 .contact-info {
-  padding: 5px;
+  padding: 8px 0px 2px 0px;
   color: white; }
 
 .contact-info a {
@@ -588,42 +619,50 @@ label {
   text-align: left;
   padding: 10px;
   padding-bottom: 0px;
-  margin: 10px;
+  padding-left: 0;
+  margin: 10px 0;
+  margin-bottom: 0px;
   float: left;
-  display: inline-block; }
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 12px; }
 
 input {
   padding: 10px;
-  margin: 10px;
+  margin-top: 3px;
+  margin: 10px 0;
   text-align: left;
   font-size: 12px;
   border-radius: 5px;
   border: none;
   box-shadow: none;
-  display: inline-block;
-  float: right;
-  width: 50%; }
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #cfcfcf; }
 
 input[type="submit"] {
   background-color: transparent;
-  border: 2px solid #1c669b;
+  border: 2px solid white;
   color: white;
   transition: .5s;
-  text-align: center; }
+  text-align: center;
+  width: 200px; }
 
 input[type="submit"]:hover {
   background-color: #1c669b;
   transition: .5s;
-  text-align: center; }
+  width: 300px; }
 
 textarea {
   border-radius: 5px;
   background-color: #efefef;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0;
   border: none;
   font-size: 16px;
-  width: 100%; }
+  width: 100%;
+  background-color: #cfcfcf; }
 
 .alert {
   color: red; }
