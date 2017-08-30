@@ -5,34 +5,27 @@
 <header id="home" class="row" style="background-image: url(' {{ site.baseurl }}/{{ page.img }} ');">
 
 	<nav id="mainmenu" role="navigation">
-		<a href="{{ site.baseurl }}">
+		<a href="{{ site.baseurl }}/index.html">
 			<div class="logo col-3"></div>
 		</a>
 
 		<div id="menu-burger"><i class="icon-menu"></i></div>
 
-		<div id="searchicon">		
-		</div>
 		<div id="menu">
 			<ul>
 	          {% for link in site.links %}
-	            <li><a href="{{site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
+	            <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
 	          {% endfor %}
 	 		</ul>
 		</div>
 	</nav>
 
 	<div class="callout row row-centered clearfix">
-
-		<img class="row-centered col-5" src="{{site.baseurl}}/library/images/logos/welch-title-horizontal-white.svg" alt="Welch Title">
-
-		<h1>{{ page.title }}</h1>
-		<div class="header-buttons">
-			<a class="button-quote" href="#contact">Get a Quote</a>
-		</div>
-		
+		<h1 class="header-h1">{{ page.title }}</h1>
 	</div>
-	<div class="bottom-arrow"></div>
+	
+	<div class="bottom-arrow">
+	</div>
 
 
 </header>

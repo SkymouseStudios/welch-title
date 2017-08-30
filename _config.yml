@@ -1,25 +1,35 @@
-# config.yml
+# Site settings
+title: "Welch Title and Abstract"
+description: "Title Services, only when you need it."
+baseurl: "http://dev.welch-title.com/"
+url: "welch-title.com"
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
 
-# subtitle => page.subtitle?
+# sass/css minify
+sass:
+  style: compressed
 
+# Main Links
 links:
   - title: Home
     url: /
   - title: Services
-    url: /services
+    url: /services.html
   - title: About
-    url: /about
+    url: /about.html
   - title: Contact
     url: /#contact
 
+# Service Links
 services:
   - title: Coal Oil Gas
-    url: /coal-oil-gas
-  - title:
-    url:
-  - title:
-    url:
-  - title:
-    url:
-  - title:
-    url:
+    url: /coal-oil-gas.html
+  - title: Wireless Telecom
+    url: /wireless-telecom.html
+  - title: Commercial & Residential
+    url: /commercial-residential.html
+  - title: Right of Way
+    url: /right-of-way.html
+  - title: Renewable Energy
+    url: /renewable-energy.html

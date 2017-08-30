@@ -2,6 +2,7 @@
 
 title: Renewable Energy
 layout: service
+picture: renewable
 
 ---
 

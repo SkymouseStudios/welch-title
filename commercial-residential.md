@@ -2,6 +2,7 @@
 
 title: Commercial and Residential
 layout: service
+picture: commercialResidential
 
 ---
 

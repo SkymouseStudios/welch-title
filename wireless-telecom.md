@@ -2,6 +2,7 @@
 
 title: Wireless Telecom
 layout: service
+picture: wirelessTelecom
 
 ---
 

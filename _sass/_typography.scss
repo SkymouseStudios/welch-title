@@ -6,18 +6,21 @@ h1 {
 	font-size: 3.5em;
     font-family: Bentham, Times;
     color: black;
+    font-weight: 400;
  }
 
 h2 { 
 	align-content: center;
 	font-size: 2em;
     font-family: Bentham, Times;
+    font-weight: 400;
  }
 
 h3 {
     font-size: 1.5em;
     text-align: center;
     font-family: Bentham, Times;
+    font-weight: 400;
 }
 
 p {
@@ -29,4 +32,8 @@ p {
 
 .gray {
     color: #404040;
-    }
+}
+
+.kill-margin {
+    margin: 0;
+}

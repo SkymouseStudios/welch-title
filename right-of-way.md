@@ -2,6 +2,7 @@
 
 title: Right of Way
 layout: service
+picture: rightOfWay
 
 ---
 

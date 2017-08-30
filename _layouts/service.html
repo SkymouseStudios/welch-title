@@ -1,17 +1,21 @@
 {% include service-header.html %}
 
+<div id="{{ page.picture }}" class="service-header">
+	<h1>{{ page.title }}</h1>
+</div>
+
 <div class="service-page row row-centered">
-		<h1>{{ page.title }}</h1>
-		<div class="box col-4 col-m-6">
+		
+		
+		<div class="col-1"></div>
+		<div class="box col-5 col-m-6">
 			{{ content }}
         </div>
 
 		<div class="box col-5 col-m-6">
-
-
-
-	{% include contact-form.html %}
-
+	
+		{% include contact-form.html %}
 	</div>
+	<div class="col-1"></div>
 </div>
 {% include footer.html %}

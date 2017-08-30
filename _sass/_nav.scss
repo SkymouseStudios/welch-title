@@ -34,24 +34,26 @@ nav {
             color: #222;
         }
     }
+    
+    ul {
+        list-style: none;
+        float: right;
+        padding: 0px 80px;
+        margin: 0 0 0 -10px;
+        height: 80px;
+
+        li {
+            display: inline-block;
+            padding: 25px;
+            margin: 0 10px;
+            color: white;
+            height: auto;
+            text-align: center;
+        }
+    }
 }
 
-ul {
-    list-style: none;
-    float: right;
-    padding: 0px 80px;
-    margin: 0 0 0 -10px;
-    height: 80px;
-}
 
-li {
-    display: inline-block;
-    padding: 25px;
-    margin: 0 10px;
-    color: white;
-    height: auto;
-    text-align: center;
-}
 
 nav ul li a::after,
 nav ul li.current-menu-item > a::after,

@@ -2,6 +2,7 @@
 
 title: Coal | Oil | Gas
 layout: service
+picture: oilGasCoal
 
 ---
 

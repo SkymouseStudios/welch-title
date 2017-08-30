@@ -1,48 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>Welch Title | {{ page.title }}</title>
-
-	<meta name="description" content="We provide searches, examinations, and closings to help manage large workloads, drive repeat business, and resolve complex title issues.">
-	<meta name="keywords" content="Title, Commercial Title, closings, Indianapolis">
-	<meta name="author" content="Nick Welch">
-	<meta property="og:image" content="{{site.url}}/images/logos/welch-title_welch-title-square-white.png">
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="1024">
-	<meta property="og:image:height" content="1024">
-
-	<link rel="stylesheet" type="text/css" href="{{site.url}}/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{site.url}}/library/css/icomoon.css" media="screen" />
-	
-
-	<script type="application/ld+json">
-			{
-			  "@context": "http://schema.org",
-			  "@type": "Local Business",
-			  "name": "Welch Title and Abstract",
-			  "url": "http://welch-title.com",
-			  "email": "nick@welch-title.com"
-			  "founders": "Nick Welch Sr."
-			  "foundingDate": "2002-05-20",
-			  "logo": "http://welch-title.com/library/images/welch-title_welch-title-square-white.jpg",
-			  "sameAs": [
-			    "https://www.instagram.com/SkymouseStudios/"
-			  ]
-			}
-		</script>
-	
-</head>
+{% include head.html %}
 
 <body>
 
-<header id="home" class="row" style="background-image: url(' {{ page.img }} ');">
+<header id="home" class="row" style="background-image: url('{{ site.baseurl }}{{page.img}}');">
 
 	<nav id="mainmenu" role="navigation">
-		<a href="{{ site.url }}">
+		<a href="{{ site.baseurl }}">
 			<div class="logo col-3"></div>
 		</a>
 
@@ -53,27 +16,26 @@
 		<div id="menu">
 			<ul>
 	          {% for link in site.links %}
-	            <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
+	            <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
 	          {% endfor %}
 	 		</ul>
 		</div>
 	</nav>
 
 	<div class="callout row row-centered clearfix">
-
-		<img class="col-4" src="{{site.url}}/library/images/logos/welch-title-horizontal-white.svg" alt="Welch Title">
-
-		<div class="header-buttons">
-			<div>
-				<a class="button-cs col-3" href="/coal-oil-gas.html">Coal | Oil | Gas</a>
-				<a class="button-cs col-3" href="renewable-engergy.html">Renewable Energy</a>
-				<a class="button-cs col-3" href="/right-of-way.html">Right-of-way</a>
-				<a class="button-cs col-3" href="/wireless-telecom.html">Wireless Telecom</a>
-				<a class="button-cs col-3" href="/commercial-residential.html">Commercial/Residential</a>
-			</div>
-		</div>
-		
+		<img class="col-6 col-centered" src="{{site.baseurl}}/library/images/logos/welch-title-horizontal-white.svg" alt="Welch Title">
 	</div>
+
+	<div class="row header-buttons">
+		<div class="col-12 col-centered">
+			<a class="button-cs" href="/coal-oil-gas.html">Coal | Oil | Gas &rarr;</a>
+			<a class="button-cs" href="/renewable-energy.html">Renewable Energy &rarr;</a>
+			<a class="button-cs" href="/right-of-way.html">Right-of-way &rarr;</a>
+			<a class="button-cs" href="/wireless-telecom.html">Wireless Telecom &rarr;</a>
+			<a class="button-cs" href="/commercial-residential.html">Commercial/Residential &rarr;</a>
+		</div>
+	</div>
+
 	<div class="bottom-arrow"></div>
 
 
@@ -83,25 +45,25 @@
 	
 	<div class="section-1 row row-centered">
 		<h2>Every Detail. Exposed and Explained.</h2>
-			<p class="col-5">
+			<p class="col-5 col-centered">
 				Welch Abstract and Title provides searches, examinations, and closings on an as-needed basis to help you manage high-volume workloads, drive repeat business, and resolve complex title issues. 
 			</p>
 		<div class="box clearfix">
 			<div class="item col-3 col-m-6 col-centered">
-				<img src="library/images/icons/Welch-title-icons-04.svg">
+				<img src="{{ site.baseurl }}/library/images/icons/Welch-title-icons-04.svg">
 				<h3>Searches</h3>
 				<p>
 					We extract all records relating to a parcel, ensuring you make the best-informed decision backed by all relevant information regarding property or persons involved. 
 				</p>
 			</div>
 			<div class="item col-3 col-m-6 col-centered">
-				<img src="library/images/icons/Welch-title-icons-02.svg">
+				<img src="{{ site.baseurl }}/library/images/icons/Welch-title-icons-02.svg">
 				<h3>Examinations</h3>
 				<p>We investigate and analyze searched records to determine any obstacles that may block or void your intended use of the property. 
 				</p>
 			</div>
 			<div class="item col-3 col-m-6 col-centered">
-				<img src="library/images/icons/Welch-title-icons-06.svg">
+				<img src="{{ site.baseurl }}/library/images/icons/Welch-title-icons-06.svg">
 				<h3>Closings</h3>
 				<p>We provide a professional and personable face for your company to finalize transactions on a high-note, driving repeat business from your clients and increasing your reputation for title industry best practices.
 				</p>
@@ -112,21 +74,22 @@
 	<div class="section-2 row row-centered"><!-- BEGIN SECTION 2 -->
 		<h2>Qualities That Make the Difference.</h2>
 		<div class="box clearfix">
-			<div class="item col-4 col-m-10 col-centered">
-				<img src="library/images/icons/Welch-title-icons-01.svg">
+			<div class="item col-3 col-m-10 col-centered">
+				<img src="{{ site.baseurl }}/library/images/icons/Welch-title-icons-01.svg">
 				<h3>Accuracy</h3>
 				<p>Title work is useless to you if it isn’t accurate. <strong>We know that details are important, but even more important is knowing where to look.</strong> Awareness of information outliers can determine the viability of your project before it even gets started, preventing wasted time and money.</p>
 			</div>
-			<div class="item col-4 col-m-10 col-centered">
-				<img src="library/images/icons/Welch-title-icons-03.svg">
+			<div class="item col-3 col-m-10 col-centered">
+				<img src="{{ site.baseurl }}/library/images/icons/Welch-title-icons-03.svg">
 				<h3>Knowlgedge</h3>
 				<p>Built on experience: With over 37 years of professional title experience, we offer knowledge drawn from countless projects across multiple title specialties. If 10,000 hours is the time required to be an expert, imagine where 76,960 hours gets you.</p>
 			</div>
-			<div class="item col-4 col-m-10 col-centered">
-				<img src="library/images/icons/Welch-title-icons-05.svg">
+			<div class="item col-3 col-m-10 col-centered">
+				<img src="{{ site.baseurl }}/library/images/icons/Welch-title-icons-05.svg">
 				<h3>Contract Based</h3>
 				<p>By offering services on a need-to-work basis, we provide you with the flexibility to handle needs as they arise and to take on projects that only temporarily increase your workload. It also means that you when you win, we win.</p>
 			</div>
+			
 		</div>
 	</div><!-- END SECTION 2 -->
 
@@ -136,34 +99,43 @@
 		
 		<h2>37 Years of Trusted Experience. Take a look.</h2>
 
-		<div class="box clearfix">
+		<div class="box clearfix col-centered">
 		<div class="col-1"></div>
-			<div class="item-1 col-3 col-m-10  col-centered">
+			<div class="item-1 col-3 col-m-10">
 				<p>"Nick Welch is one of the most trustworthy people that I know, both personally and professionally. He always met my company's needs in a timely manner, while providing excellent customer service through a very personalized approach.”</p>
 				<div class="client">- Derek Phillips, Vice President</div> 
 				<div class="company">Commercial Banking at Centier Bank</div>
-                <!-- <div class="button case-study" href="#">Read the Case Study</div> -->
 			</div>
 			
             
-			<div class="item-1 col-3 col-m-10 col-centered">
+			<div class="item-1 col-3 col-m-10">
 				<p>"Nick provides consistently reliable results, and is always timely. He's my 'go to' title guy.” </p>
 				<div class="client">Melissa DeGroff, Workout and Loan Documentation Attorney</div> 
-				<div class="company"></div>	
-                <!-- <div class="button case-study" href="#">Read the Case Study</div> -->
+				<div class="company"></div>
 			</div>
                 
             
-			<div class="item-1 col-3 col-m-10 col-centered">
+			<div class="item-1 col-3 col-m-10">
 				<p>"I've worked with Nick Welch in the past and he was an experienced, trustworthy service provider that quarterbacked the successful closing of numerous building purchase transactions. He delivered great results!”</p>
 				<div class="client">- Scott Lindenberg, Commercial Real-Estate Advisor</div> 
-				<div class="company"></div>	
-                <!-- <div class="button case-study" href="#">Read the Case Study</div> -->
+				<div class="company"></div>
 			</div>	
 			<div class="col-1"></div>
 		</div>
 	</div><!-- END SECTION 3 -->
 
+	<div class="section-4 row">
+	<div class="col-1"></div>
+		<div class="col-5 col-m-8">
+			<h1 class="kill-margin">Let's get in touch</h1>
+			<p>"I've worked with Nick Welch in the past and he was an experienced, trustworthy service provider that quarterbacked the successful closing of numerous building purchase transactions. He delivered great results!”</p>
+		</div>
+
+		<div class="col-5 col-m-8">
+			{% include contact-form.html %}
+		</div>
+	<div class="col-1"></div>
+	</div>
 </content>
 
 {% include footer.html %}
