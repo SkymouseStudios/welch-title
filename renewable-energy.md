@@ -6,14 +6,10 @@ picture: renewable
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nihil aliquid nam animi aspernatur ducimus, odio libero praesentium tempora fuga illo sint sed molestiae, doloribus eligendi explicabo magni quos vitae?
+Welch Abstract and Title is committed to building renewable energy solutions that work for everyone. We hope to provide revewable energy sources that will serve us now and for gerneations to come.
 
 <h2 class="gray">Services</h2>
-- Wind
-- Solar
 - Feasibility Studies
-- Community Relations
-- Zoning
-- Aquisition?
-- Permitting
-- Document
+- Drone Services
+- Title Research / Abstracting
+- Solar Field Land Acquisition
