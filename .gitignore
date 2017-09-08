@@ -1,2 +1,5 @@
-/_site/*
+_site
 *.scssc
+
+config.codekit3
+.htaccess
