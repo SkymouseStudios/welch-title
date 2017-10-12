@@ -6,7 +6,7 @@ picture: wirelessTelecom
 
 ---
 
-We were acquiring and zoning cell site when bag phones were the hottest technology!  27 years and 13 states later we have performed everything from site selection to tower management and all points in between.
+We were acquiring and zoning cell sites when bag phones were the hottest technology!  27 years and 13 states later we have performed everything from site selection to tower management and all points in between.
 
 <h2 class="gray">Services</h2>
 - Site Acquisition 
