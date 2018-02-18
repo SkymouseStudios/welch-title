@@ -13,15 +13,15 @@ sass:
 # Main Links
 links:
   - title: Home
-    url: /
+    url: ""
   - title: Services
-    url: /services.html
+    url: "services.html"
   - title: About
-    url: /about.
+    url: "about.html"
   - title: Drone
-    url: /drone-services.html
+    url: "drone-services.html"
   - title: Contact
-    url: /#contact
+    url: "#contact"
 
 # Service Links
 services:
