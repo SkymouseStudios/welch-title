@@ -1,7 +1,7 @@
 # Site settings
 title: "Welch Title and Abstract"
 description: "Title Services, only when you need it."
-baseurl: #"http://welch-title.com/"
+baseurl: "http://welch-title.com/"
 url: "welch-title.com"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"

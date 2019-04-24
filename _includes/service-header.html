@@ -5,23 +5,20 @@
 <header id="{{ page.picture }}" class="row");">
 
 	<nav id="mainmenu" role="navigation">
-		<a href="{{ site.baseurl }}/index.html">
+		<a href="{{ site.baseurl }}">
 			<div class="logo col-3"></div>
 		</a>
 
-		<div id="menu-burger"><i class="icon-menu"></i></div>
-
-		<div id="searchicon">		
+		<div id="menu-burger">
+			<i class="icon-menu"></i>
 		</div>
 
-		<div class="header-contact">
-            <div class="contact-info">
-                <p>Nick Welch</p>
-                <p>(317) 496-0923</p>
-                <a class="contact-info underline" href="mailto:nick@welch-title.com">
-               nick@welch-title.com
-            	</a>
-			</div>
+		<div id="menu">
+			<ul>
+	          {% for link in site.links %}
+	            <li><a href="{{site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
+	          {% endfor %}
+	 		</ul>
 		</div>
 	</nav>
 
