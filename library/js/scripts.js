@@ -35,11 +35,6 @@
 		}
 	});
 
-	// header menu burger
-	jQuery('#menu-burger').on('click', function() {
-		jQuery('#menu').toggleClass('menu-shown');
-	});
-
 	// init Magnific popup
 	jQuery('a.popup').magnificPopup({
 	  type: 'image',
@@ -57,3 +52,8 @@
 	   jQuery(this).attr("title", imgTitle);
 	});
 });
+
+// header menu burger
+	jQuery('nav #menu-burger').on('click', function() {
+		jQuery('#menu').toggleClass('menu-shown');
+	});
